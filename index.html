@@ -6,9 +6,10 @@
         <meta name="robots" content="noindex, nofollow">
         <meta http-equiv="X-UA-Compatible" content="IE=9" />
 
-        <link rel="stylesheet" href="css/normalize.min..css"/>
+        <link rel="stylesheet" href="css/normalize.min.css"/>
         <link rel="stylesheet" href="css/main.css"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura|Alex+Brush"
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura|Alex+Brush"/>
+        <script defer src="js/main.js"></script>
 
     </head>
     <body>
@@ -33,12 +34,15 @@
 
                     <div class="header-toggles--mobile">
                         <a href="#">
-                            <!-- need a cart icon -->
+                            <img src="images/shopping-cart.svg" height="50px" alt="Cart">
                             <span class="visually-hidden">Go to Cart</span>
                         </a>
-                        <a href="#" class="menu-toggle">
-                            <span class="visually-hidden">Toggle Menu</span>
-                        </a>
+                        <div id="mobile-navigation" class="mobile-nav">
+                            <a href="#" class="menu-toggle" onclick="navBarClick()">
+                                <img src="images/hamburger-menu.svg" height="50px" alt="Menu-Selector">
+                                <span class="visually-hidden">Toggle Menu</span>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
@@ -55,7 +59,7 @@
                             <label for="headerSiteSeach" class="visually-hidden">Search this site...</label>
                             <input id="headerSiteSearch" type="search" placeholder="Search this site.."/>
                             <button class="site-search__button">
-                                <!-- need a search icon -->
+                                <img src="images/search-icon.svg" alt="Search">
                                 <span class="visually-hidden">Submit Search</span>
                             </button>
                         </form>
@@ -74,13 +78,14 @@
                     </div>
 
                 </div>
-                <div class="header-bottom">
+                <div id="header-bot" class="header-bottom">
 
                     <div class="site-search">
                         <form class="site-search__form">
                             <label for="headerMenuSiteSeach" class="visually-hidden">Search this site...</label>
                             <input id="headerMenuSiteSeach" type="search" placeholder="Search this site.."/>
                             <button class="site-search__button">
+                                <img src="images/search-icon.svg" alt="Search">
                                 <span class="visually-hidden">Submit Search</span>
                             </button>
                         </form>

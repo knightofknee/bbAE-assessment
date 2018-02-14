@@ -89,7 +89,39 @@
         }
 
         .header-top { color:#666; }
-        .header-top .contact-box .button { display:none; }
+        .header-top .contact-box .button {
+            display:none;
+            float:left;
+        }
+
+        /* mobile nav menu section*/
+        #mobile-navigation{
+            display:inline-block;
+            margin-right: 30px;
+        }
+
+        .mobile-nav{
+            overflow: hidden;
+            background-color:white;
+        }
+
+        .mobile-nav a.menu-toggle {
+            float: right;
+            display: block;
+            margin: 0 20px 20px 0
+        }
+
+        .header-toggles--mobile .svg-icon {
+            float:right;
+            font-size:24px;
+        }
+
+        .menu-toggle {
+            display:inline-block;
+            position:relative;
+            width:32px;
+            height:28px;
+        }
 
         .header-middle {
             position:relative;
@@ -193,6 +225,9 @@
                 border-top-width: 3px;
                 border-radius: 3px;
                 background:#fff;
+            }
+            .header-bottom.activated {
+                display:block;
             }
         }
 
@@ -443,7 +478,7 @@
 
         .site-search__button {
             position:absolute;
-            top:4px; bottom:4px; right:4px;
+            top:0px; bottom:4px; right:30px;
             width:30px;
             border:0;
             color:#a8a8a8;
@@ -483,24 +518,12 @@
             padding-left: 1em;
         }
 
-        .header-toggles--mobile { color:#000; }
-        .header-toggles--mobile a {
+        /* .header-toggles--mobile { color:#000; } */
+        /*.header-toggles--mobile a {
             display:inline-block;
-            margin-left:5px;
+            margin: 20px 20px 0px 20px;
             vertical-align:middle;
-        }
-
-        .header-toggles--mobile .svg-icon {
-            display:block;
-            font-size:24px;
-        }
-
-        .menu-toggle {
-            display:inline-block;
-            position:relative;
-            width:32px;
-            height:28px;
-        }
+        } */
 
         @media (min-width:64em) {
             .header-toggles--mobile { display:none; }
