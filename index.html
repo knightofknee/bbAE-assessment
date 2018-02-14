@@ -178,8 +178,10 @@
 
                     <div class="page-footer__column">
                         <div class="expander">
-                            <h2 class="expander__toggle">About Us</h2>
-                            <div class="expander__panel">
+                            <h2 onclick="accordionAbout()" class="expander__toggle">About Us
+                                <img class="plus-sign" src="images/plus-sign.svg" alt="Expand">
+                            </h2>
+                            <div id="about-us" class="expander__panel">
                                 <ul class="link-list">
                                     <li><a href="#">Our Story</a></li>
                                     <li><a href="#">Baby Registry</a></li>
@@ -192,8 +194,10 @@
 
                     <div class="page-footer__column">
                         <div class="expander">
-                            <h2 class="expander__toggle">Service</h2>
-                            <div class="expander__panel">
+                            <h2 onclick="accordionContact()" class="expander__toggle">Service
+                                <img class="plus-sign" src="images/plus-sign.svg" alt="Expand">
+                            </h2>
+                            <div id="contact" class="expander__panel">
                                 <ul class="link-list">
                                     <li><a href="#">Contact Us</a></li>
                                     <li><a href="#">Order Status</a></li>
@@ -210,8 +214,10 @@
 
                     <div class="page-footer__column">
                         <div class="expander">
-                            <h2 class="expander__toggle">Shop</h2>
-                            <div class="expander__panel">
+                            <h2 onclick="accordionNav()" class="expander__toggle">Shop
+                                <img class="plus-sign" src="images/plus-sign.svg" alt="Expand">
+                            </h2>
+                            <div id="acc-nav" class="expander__panel">
                                 <ul class="link-list">
                                     <li><a href="#">Baby Apparel</a></li>
                                     <li><a href="#">Baby Gifts</a></li>
@@ -270,21 +276,23 @@
                     </div>
 
                 </div>
-                <div class="footer-bottom">
+                <div class="footer-outer">
+                    <div class="footer-bottom">
 
-                    <div class="page-footer__column">
-                        <div class="copyright">
-                            <p><span class="copyright__text">@2013 Beautiful Beginnings. All Rights Reserved</span> <a href="#">Site Map</a> <a href="#">Privacy Policy</a> <a href="#">Terms &amp; Conditions</a></p>
-                            <p class="ae-logo"><img src="images/powered-by-americaneagle.png" /> Web Site design and development by Americaneagle.com</p>
+                        <div class="page-footer__column">
+                            <div class="copyright">
+                                <p><span class="copyright__text">@2013 Beautiful Beginnings. All Rights Reserved</span> <a href="#">Site Map</a> <a href="#">Privacy Policy</a> <a href="#">Terms &amp; Conditions</a></p>
+                                <p class="ae-logo"><img src="images/powered-by-americaneagle.png" /> Web Site design and development by Americaneagle.com</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="page-footer__column">
-                        <div class="site-logo">
-                            <img src="images/bb-logo.png">
+                        <div class="page-footer__column">
+                            <div class="site-logo">
+                                <img src="images/bb-logo.png">
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </footer>
         </div>
